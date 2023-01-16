@@ -1,0 +1,101 @@
+/* Load Madelyn.otf, Brittany.otf, and SIFONN_PRO.otf */
+@font-face {
+    font-family: "Brittany";
+    src: url("./BrittanySignature.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Madelyn";
+    src: url("./Madelyn.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Sifonn";
+    src: url("./SIFONN_PRO.otf") format("opentype");
+}
+
+
+
+body {
+    background-image: url(./background2.png);
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+.page {
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    width: min(100%, 50vh);
+    height: auto;
+}
+
+.title-text {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Sifonn';
+    height: 10vh;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 601px) {
+    .title-text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title-text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .title-text {
+        font-size: 53px;
+    }
+}
+
+.subtitle-text {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Madelyn';
+    height: 10vh;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 601px) {
+    .subtitle-text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subtitle-text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .subtitle-text {
+        font-size: 53px;
+    }
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #e51f22a4;
+}
+
