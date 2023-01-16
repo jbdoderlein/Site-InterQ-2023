@@ -14,11 +14,17 @@
     src: url("./SIFONN_PRO.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Codex";
+    src: url("./codec-pro.regular.ttf") format("truetype");
+}
+
 
 
 body {
     background-image: url(./background2.png);
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
 }
 
 .title {
@@ -73,15 +79,92 @@ body {
     font-size: 16px;
 }
 
-@media screen and (min-width: 601px) {
-    .subtitle-text {
-        font-size: 40px;
-    }
+
+
+.section-title {
+    color: white;
+    font-family: 'Brittany';
+    font-size: 6rem;
+    z-index: 1;
+    margin: inherit;
+    margin-left: 10vw;
+    position: relative;
+    top: -95vh;
+}
+
+.section-p {
+    color: white;
+    font-family: 'Codex';
+    font-size: 2rem;
+    z-index: 1;
+    margin: inherit;
+    margin-left: 10vw;
+    position: relative;
+    top: -90vh;
+    width: 65vw;
+}
+
+#arrowright {
+    width: 75vw;
+    height: 50vh;
+    background: #e51f22a4;
+    position: relative;
+    z-index: -1;
+}
+
+#arrowright:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25vh solid transparent;
+    border-bottom: 25vh solid transparent;
+    border-left: 15vh solid #e51f22a4;
+    content: "";
+    left: 75vw;
+    top: 0px;
+}
+
+#arrowrightb {
+    width: 75vw;
+    height: 50vh;
+    background: #ca3d72a3;
+    position: relative;
+    z-index: -2;
+    top: -48vh
+}
+
+#arrowrightb:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25vh solid transparent;
+    border-bottom: 25vh solid transparent;
+    border-left: 15vh solid #ca3d72a3;
+    content: "";
+    left: 75vw;
 }
 
 @media screen and (max-width: 600px) {
     .subtitle-text {
         font-size: 30px;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .section-p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .subtitle-text {
+        font-size: 40px;
+    }
+    .section-title {
+        font-size: 5rem;
+    }
+    .section-p {
+        font-size: 1.8rem;
     }
 }
 
@@ -89,13 +172,10 @@ body {
     .subtitle-text {
         font-size: 53px;
     }
+    .section-title {
+        font-size: 6rem;
+    }
+    .section-p {
+        font-size: 2rem;
+    }
 }
-
-.arrow-right {
-    width: 0; 
-    height: 0; 
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 60px solid #e51f22a4;
-}
-
