@@ -188,7 +188,7 @@ nav{
 }
 
 /* PC adaptation */
-@media only screen and (min-width: 993px) and (max-width: 1500px){
+@media only screen and (min-width: 993px){
     /* Portrait for tablet, almost PC */
     @media screen and (orientation:landscape) {
         .logo {
@@ -241,3 +241,5 @@ nav{
         margin-left: calc(100vw - 950px + 300px)!important;
     }
 }
+
+/* PC ++  adaptation */
