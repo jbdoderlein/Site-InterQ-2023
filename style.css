@@ -19,6 +19,16 @@
     src: url("./codec-pro.regular.ttf") format("truetype");
 }
 
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px hsl(0, 0%, 100%, 0.70), 0 0 20px hsl(0, 0%, 100%, 0.70), 0 0 30px hsl(45, 100%, 45%, 0.70), 0 0 40px hsl(45, 100%, 45%, 0.70), 0 0 50px hsl(45, 100%, 45%, 0.70), 0 0 60px hsl(45, 100%, 45%, 0.70), 0 0 70px hsl(45, 100%, 45%, 0.70);
+    }
+
+    to {
+        text-shadow: 0 0 20px hsl(0, 0%, 100%, 0.70), 0 0 30px hsl(45, 100%, 65%, 0.70), 0 0 40px hsl(45, 100%, 65%, 0.70), 0 0 50px hsl(45, 100%, 65%, 0.70), 0 0 60px hsl(45, 100%, 65%, 0.70), 0 0 70px hsl(45, 100%, 65%, 0.70), 0 0 80px hsl(45, 100%, 65%, 0.70);
+    }
+}
+
 /* We work in a mobile adpatation first approach ~ 360x640 */
 /* Mobile adaptation */
 
@@ -28,19 +38,19 @@ body {
     background-repeat: repeat-y;
 }
 
-nav{
-    background-color: transparent!important;
-    box-shadow: none!important;
-    -webkit-box-shadow: none!important;
+nav {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
     font-family: Sifonn;
 }
 
-#menu{
+#menu {
     display: flex;
-    background: linear-gradient(0.25turn,rgba(245, 54, 114, 0.7),rgba(147, 10, 78, 0.7) ,rgba(201, 13, 82, 0.7));
+    background: linear-gradient(0.25turn, rgba(245, 54, 114, 0.7), rgba(147, 10, 78, 0.7), rgba(201, 13, 82, 0.7));
 }
 
-.menu-item{
+.menu-item {
     flex: fit-content;
 }
 
@@ -55,7 +65,7 @@ nav{
     margin: 0;
 }
 
-.subpage{
+.subpage {
     height: 400px;
     margin: 50px 0 50px 0;
 }
@@ -74,6 +84,9 @@ nav{
     text-align: center;
     font-family: 'Sifonn';
     font-size: 32px;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 .subtitle-text {
@@ -82,6 +95,9 @@ nav{
     text-align: center;
     font-family: 'Madelyn';
     font-size: 36px;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 @media screen and (orientation:landscape) {
@@ -97,7 +113,7 @@ nav{
         position: relative;
         top: -60px;
     }
-    
+
     .subtitle-text {
         font-size: 32px;
         position: relative;
@@ -126,16 +142,16 @@ nav{
     top: -400px;
 }
 
-.section-title.aright{
-    margin-left: 8vw!important;
+.section-title.aright {
+    margin-left: 3vw !important;
 }
 
-.section-title.aleft{
+.section-title.aleft {
     line-height: initial;
-    margin-left: 35vw!important;
+    margin-left: 32vw !important;
 }
 
-.section-subtitle{
+.section-subtitle {
     color: white;
     font-family: 'Brittany';
     font-size: 28px;
@@ -145,12 +161,12 @@ nav{
     top: -400px;
 }
 
-.section-subtitle.aright{
-    margin-left: 8vw!important;
+.section-subtitle.aright {
+    margin-left: 3vw !important;
 }
 
-.section-subtitle.aleft{
-    margin-left: 35vw!important;
+.section-subtitle.aleft {
+    margin-left: 32vw !important;
 }
 
 .section-p {
@@ -164,31 +180,56 @@ nav{
     width: 65vw;
 }
 
-.section-p.aright{
-    margin-left: 8vw!important;
+.section-p.aright {
+    margin-left: 3vw !important;
 }
 
-.section-p.aleft{
-    margin-left: 35vw!important;
+.section-p.aleft {
+    margin-left: 32vw !important;
     padding-right: 15px;
 }
 
+.pagebtn{
+    display: flex;
+    justify-content: center;
+}
+
+.project-btn {
+    margin: 0 5vw 0 5vw!important;
+    text-align: center!important;
+    height: 80px!important;
+    line-break: auto!important;
+    line-height: 38px!important;
+    font-size: 18px!important;
+    background-color: #ac1515e6!important;
+}
+
+
 
 /* Tablet adaptation */
-@media only screen and (min-width: 600px) and (max-width: 992px){
-    .section-title{
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .section-title {
         font-size: 46px;
     }
-    .section-subtitle{
+
+    .section-subtitle {
         font-size: 36px;
     }
-    .section-p{
+
+    .section-p {
         font-size: 17px;
+    }
+
+    .project-btn {
+        height: 110px !important;
+        line-height: 52px !important;
+        font-size: 31px !important;
     }
 }
 
 /* PC adaptation */
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 993px) {
+
     /* Portrait for tablet, almost PC */
     @media screen and (orientation:landscape) {
         .logo {
@@ -197,13 +238,13 @@ nav{
             position: relative;
             top: 0;
         }
-    
+
         .title-text {
             font-size: 28px;
             position: relative;
             top: 0;
         }
-        
+
         .subtitle-text {
             font-size: 32px;
             position: relative;
@@ -212,34 +253,49 @@ nav{
     }
 
 
-    .section-title{
+    .section-title {
         font-size: 46px;
     }
-    .section-subtitle{
+
+    .section-subtitle {
         font-size: 36px;
     }
-    .section-p{
+
+    .section-p {
         font-size: 20px;
         width: 650px;
     }
+
     .arrow-right {
         width: 950px;
         height: 400px;
     }
+
     .arrow-left {
         width: 950px;
         height: 400px;
         margin-left: calc(100vw - 950px);
     }
-    .section-title.aleft{
-        margin-left: calc(100vw - 950px + 300px)!important;
+
+    .section-title.aleft {
+        margin-left: calc(100vw - 950px + 300px) !important;
     }
-    .section-subtitle.aleft{
-        margin-left: calc(100vw - 950px + 300px)!important;
+
+    .section-subtitle.aleft {
+        margin-left: calc(100vw - 950px + 300px) !important;
     }
-    .section-p.aleft{
-        margin-left: calc(100vw - 950px + 300px)!important;
+
+    .section-p.aleft {
+        margin-left: calc(100vw - 950px + 300px) !important;
     }
+
+    .project-btn {
+        height: 80px !important;
+        line-height: 76px !important;
+        font-size: 34px !important;
+    }
+
+
 }
 
 /* PC ++  adaptation */
