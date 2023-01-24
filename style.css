@@ -159,6 +159,7 @@ nav {
     margin: 10px 0 10px 0;
     position: relative;
     top: -400px;
+    width: 65vw;
 }
 
 .section-subtitle.aright {
@@ -189,20 +190,81 @@ nav {
     padding-right: 15px;
 }
 
-.pagebtn{
+.pagebtn {
     display: flex;
     justify-content: center;
 }
 
 .project-btn {
-    margin: 0 5vw 0 5vw!important;
-    text-align: center!important;
-    height: 80px!important;
-    line-break: auto!important;
-    line-height: 38px!important;
-    font-size: 18px!important;
-    background-color: #ac1515e6!important;
+    margin: 0 5vw 0 5vw !important;
+    text-align: center !important;
+    height: 80px !important;
+    line-break: auto !important;
+    line-height: 38px !important;
+    font-size: 18px !important;
+    background-color: #ac1515e6 !important;
 }
+
+#btninscrp::after{
+    content: "\a";
+    white-space: pre;
+}
+
+#btnprjt::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.pagetable {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#tarif {
+    background-color: #bd1e29a1;
+    table-layout: fixed;
+    margin: 18px;
+    border-radius: 15px;
+    border-collapse: initial;
+    border-spacing: 0;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px hsl(0, 0%, 100%, 0.50), 0 0 20px hsl(0, 0%, 100%, 0.50), 0 0 30px hsla(303, 100%, 32%, 0.5), 0 0 40px hsla(303, 100%, 32%, 0.5), 0 0 50px hsl(45, 100%, 45%, 0.50), 0 0 60px hsla(303, 100%, 32%, 0.5), 0 0 70px hsla(303, 100%, 32%, 0.5);
+}
+
+#tarif td, #tarif th {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Codex';
+    font-size: 16px;
+    color: white;
+}
+.table-title th {
+    font-family: 'Sifonn'!important;
+    font-size: 32px!important;
+}
+
+#tarif .price {
+    font-family: 'Brittany';
+    font-size: 32px;
+}
+
+#page4, #page4 .arrow-right{
+    height: 450px;
+}
+
+#page4 .section-title, #page4 .section-subtitle, #page4 .section-p {
+    top: -450px;
+}
+
+#page7, #page7 .arrow-right{
+    height: 800px;
+}
+
+#page7 .section-title, #page7 .section-subtitle, #page7 .section-p {
+    top: -800px;
+}
+
 
 
 
@@ -217,7 +279,7 @@ nav {
     }
 
     .section-p {
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .project-btn {
@@ -225,6 +287,20 @@ nav {
         line-height: 52px !important;
         font-size: 31px !important;
     }
+
+    #tarif td, #tarif th {
+        font-size: 20px;
+    }
+
+    #page7, #page7 .arrow-right{
+        height: 700px;
+    }
+    
+    #page7 .section-title, #page7 .section-subtitle, #page7 .section-p {
+        top: -700px;
+    }
+
+    
 }
 
 /* PC adaptation */
@@ -295,7 +371,119 @@ nav {
         font-size: 34px !important;
     }
 
+    #btnprjt::after {
+        content: "";
+    }
+
+    #btninscrp::after {
+        content: "";
+    }
+
+    #tarif td, #tarif th {
+        font-size: 20px;
+    }
+
+    #page7, #page7 .arrow-right{
+        height: 600px;
+    }
+    
+    #page7 .section-title, #page7 .section-subtitle, #page7 .section-p {
+        top: -600px;
+    }
+
+
+
 
 }
 
-/* PC ++  adaptation */
+/* PC +  adaptation */
+
+@media only screen and (min-width: 1200px) {
+    .title-text {
+        font-size: 46px;
+    }
+    .subtitle-text {
+        font-size: 40px;
+    }
+}
+
+/* PC + + adaptation */
+@media only screen and (min-width: 1800px) {
+    .title-text {
+        font-size: 46px;
+    }
+    .subtitle-text {
+        font-size: 46px;
+    }
+
+    .subpage {
+        height: 500px;
+    }
+
+    .section-title {
+        font-size: 56px;
+        top: -500px;
+    }
+
+    .section-subtitle {
+        font-size: 46px;
+        top: -500px;
+    }
+
+    .section-p {
+        font-size: 24px;
+        width: 650px;
+        top: -500px;
+    }
+
+    .arrow-right {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .arrow-left {
+        width: 1000px;
+        height: 500px;
+        margin-left: calc(100vw - 1000px);
+    }
+
+    .section-title.aleft {
+        margin-left: calc(100vw - 1000px + 300px) !important;
+    }
+
+    .section-subtitle.aleft {
+        margin-left: calc(100vw - 1000px + 300px) !important;
+    }
+
+    .section-p.aleft {
+        margin-left: calc(100vw - 1000px + 300px) !important;
+    }
+
+    #tarif{
+        margin: 80px;
+    }
+
+    #tarif td, #tarif th {
+        font-size: 30px;
+    }
+
+    #tarif .price {
+        font-size: 42px;
+    }
+
+    #page4, #page4 .arrow-right{
+        height: 600px;
+    }
+    
+    #page4 .section-title, #page4 .section-subtitle, #page4 .section-p {
+        top: -600px;
+    }
+
+    #page7, #page7 .arrow-right{
+        height: 800px;
+    }
+    
+    #page7 .section-title, #page7 .section-subtitle, #page7 .section-p {
+        top: -800px;
+    }
+}
