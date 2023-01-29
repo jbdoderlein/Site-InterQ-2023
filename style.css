@@ -83,7 +83,7 @@ nav {
     color: white;
     text-align: center;
     font-family: 'Sifonn';
-    font-size: 32px;
+    font-size: 28px;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
@@ -94,7 +94,7 @@ nav {
     color: white;
     text-align: center;
     font-family: 'Madelyn';
-    font-size: 36px;
+    font-size: 32px;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
@@ -103,7 +103,7 @@ nav {
 @media screen and (orientation:landscape) {
     .logo {
         width: auto;
-        height: 75vh;
+        height: 70vh;
         position: relative;
         top: -60px;
     }
@@ -140,6 +140,7 @@ nav {
     z-index: 1;
     margin: 10px 0 10px 0;
     top: -400px;
+    width: 65vw;
 }
 
 .section-title.aright {
@@ -365,10 +366,12 @@ nav {
 
     .section-title {
         font-size: 46px;
+        width: 650px;
     }
 
     .section-subtitle {
         font-size: 36px;
+        width: 650px;
     }
 
     .section-p {
