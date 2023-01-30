@@ -205,6 +205,7 @@ nav {
 
 .section-button.aright {
     margin-left: 3vw !important;
+    width: 65vw;
 }
 
 .section-button.aleft {
@@ -270,12 +271,20 @@ nav {
     font-size: 32px;
 }
 
-#page2, #page2 .arrow-left{
+#page1, #page1 .arrow-right{
     height: 450px;
 }
 
-#page2 .section-title, #page2 .section-subtitle, #page2 .section-p, #page2 .section-button {
+#page1 .section-title, #page1 .section-subtitle, #page1 .section-p, #page1 .section-button {
     top: -450px;
+}
+
+#page2, #page2 .arrow-left{
+    height: 500px;
+}
+
+#page2 .section-title, #page2 .section-subtitle, #page2 .section-p, #page2 .section-button {
+    top: -500px;
 }
 
 #page4, #page4 .arrow-right{
@@ -345,7 +354,7 @@ nav {
     @media screen and (orientation:landscape) {
         .logo {
             width: auto;
-            height: 75vh;
+            height: 65vh;
             position: relative;
             top: 0;
         }
@@ -382,6 +391,10 @@ nav {
     .section-button {
         line-height: 58px !important;
         font-size: 22px !important;
+    }
+
+    .section-button.aright {
+        width: 600px;
     }
 
     .arrow-right {
