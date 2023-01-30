@@ -20,66 +20,82 @@
 <body>
     <!-- Page Title -->
     <div class="page title row">
-
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="menu" class="hide-on-med-and-down">
-                    <li class="menu-item"><a href="#page1">L’ÉVÉNEMENT</a></li>
-                    <li class="menu-item"><a href="#page2">L’APPEL À PROJETS</a></li>
-                    <li class="menu-item"><a href="#page4">LA BILLETTERIE</a></li>
-                    <li class="menu-item"><a href="#page6">LE PROGRAMME</a></li>
-                    <li class="menu-item"><a href="#page7">LES INFOS PRATIQUES</a></li>
+                    <li class="menu-item"><a href="#page1">L'ÉVÉNEMENT</a></li>
+                    <li class="menu-item"><a href="#page2">APPEL À PROJETS</a></li>
+                    <li class="menu-item"><a href="#page4">BILLETTERIE</a></li>
+                    <li class="menu-item"><a href="#page6">PROGRAMME</a></li>
+                    <li class="menu-item"><a href="#page7">INFOS PRATIQUES</a></li>
                 </ul>
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li class="menu-item"><a href="#page1">L’ÉVÉNEMENT</a></li>
-            <li class="menu-item"><a href="#page2">L’APPEL À PROJETS</a></li>
-            <li class="menu-item"><a href="#page4">LA BILLETTERIE</a></li>
-            <li class="menu-item"><a href="#page6">LE PROGRAMME</a></li>
-            <li class="menu-item"><a href="#page7">LES INFOS PRATIQUES</a></li>
+            <li class="menu-item"><a href="#page1">L'ÉVÉNEMENT</a></li>
+            <li class="menu-item"><a href="#page2">APPEL À PROJETS</a></li>
+            <li class="menu-item"><a href="#page4">BILLETTERIE</a></li>
+            <li class="menu-item"><a href="#page6">PROGRAMME</a></li>
+            <li class="menu-item"><a href="#page7">INFOS PRATIQUES</a></li>
         </ul>
-        <img class="logo" src="logo_title2.png" alt="Logo InterQ">
+        <img class="logo" src="img/logo_title.png" alt="Logo InterQ">
         <p class="center title-text">INTERCULTURELLES 2023</p>
         <p class="center subtitle-text">a kind of magic</p>
+
+        <div class="date">
+            <p style="margin: 0;">
+                31 mars
+                1-2 avril 
+                2023
+            </p>
+        </div>
     </div>
     <!-- Page Info 1 -->
     <div id="page1" class="subpage">
-        <img class="arrow-right" src="arrow_right.png" alt="arrow">
-        <p class="section-title aright">L’ÉVÉNEMENT</p>
+        <img class="arrow-right" src="img/arrow_right.png" alt="arrow">
+        <p class="section-title aright">L'ÉVÉNEMENT</p>
         <p class="section-subtitle aright">Les InterQuoi ?</p>
         <p class="section-p aright">Les InterQ, pour "InterENS culturelles" sont un festival rassemblant, autour d'un
             week-end dédié à l'art et à la culture, les étudiants des 4 ENS françaises ainsi que ceux de l'ENS italienne
             de Pise (oui oui) ! Elles auront lieu cette année à Ker Lann sur le campus de l'ENS Rennes du vendredi 31
-            mars au dimanche 2 avril ! On s’y donne rendez-vous ?</p>
+            mars au dimanche 2 avril ! On s'y donne rendez-vous ?</p>
     </div>
 
     <div id="page2" class="subpage">
-        <img class="arrow-left" src="arrow_left.png" alt="arrow">
-        <p class="section-title aleft">L’APPEL À PROJETS</p>
+        <img class="arrow-left" src="img/arrow_left.png" alt="arrow">
+        <p class="section-title aleft">L'APPEL À PROJETS</p>
         <p class="section-subtitle aleft">Ça sert à Quoi ?</p>
         <p class="section-p aleft">Vous êtes artistes, engagés dans une assoc' culturelle ou tout simplement animateurs
-            dans l’âme, venez proposer un projet, qu’il soit de type musical, dansant, littéraire, ludique, associatif
+            dans l'âme, venez proposer un projet, qu'il soit de type musical, dansant, littéraire, ludique, associatif
             (etc.) pour les InterQ et on se fera un plaisir de vous aider à le mettre en œuvre !
         </p>
         <a class="section-button aleft waves-effect waves-light btn-large"
             href="https://forms.gle/jX2uYprX5ALbouD16">
             <span id="btnprjt">Proposez un projet !</span>
-            <span>(jusqu’au 08/03)</span>
+            <span>(jusqu'au 08/03)</span>
         </a>
     </div>
 
     <div id="page4" class="subpage">
-        <img class="arrow-right" src="arrow_right.png" alt="arrow">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Pour les adhérent BDA de l'ENS Rennes</h4>
+              <p>Pour les adhérents au BDA de l'ENS Rennes, une réduction de 2€ vous est proposée, et vous avez en plus la possibilité de prendre des billets pour le vendredi soir ou le samedi uniquement. Plus d'infos par mail ENS.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+        <img class="arrow-right" src="img/arrow_right.png" alt="arrow">
         <p class="section-title aright">LA BILLETTERIE</p>
         <p class="section-subtitle aright">Combien ça Qoûte ?</p>
         <p class="section-p aright">Pas de panique ! Vous pourrez trouver la billetterie sur le
             lien juste en-dessous.
             Pour ceux qui souhaitent se loger pendant le week-end, nous proposons à tarif abordable 82 places
-            d’hébergement dans Rennes (accessible en bus de nuit depuis le campus de Ker Lann). Seules les billets avec
+            d'hébergement dans Rennes (accessible en bus de nuit depuis le campus de Ker Lann). Seules les billets avec
             cette option sont disponibles pour la première semaine de la billetterie (du 8 au 14 février inclus).
-            Voici la grille de tarifs (*) : </p>
+            Voici la grille de tarifs <a id="btnrennes" class="modal-trigger" href="#modal1">(*)</a> : </p>
         <a class="section-button aright waves-effect waves-light btn-large"
             href="https://www.helloasso.com/associations/bureau-des-arts-de-l-ecole-normale-superieure-de-rennes/evenements/interens-culturelles-rennes-2023?_ga=2.142974396.861337550.1673986421-1839525534.1667069610">
             <span id="btninscrp">Inscrivez-vous </span><span>(ouverture le 8/02)</span>
@@ -115,7 +131,7 @@
     </div>
 
     <div id="page6" class="subpage">
-        <img class="arrow-left" src="arrow_left.png" alt="arrow">
+        <img class="arrow-left" src="img/arrow_left.png" alt="arrow">
         <p class="section-title aleft">LE PROGRAMME</p>
         <p class="section-subtitle aleft">Il y aura Quoi ?</p>
         <p class="section-p aleft">Des concerts, des soirées, des jeux, etc. (selon ce que vous proposez), il y en aura
@@ -125,28 +141,28 @@
     </div>
 
     <div id="page7" class="subpage">
-        <img class="arrow-right" src="arrow_right.png" alt="arrow">
+        <img class="arrow-right" src="img/arrow_right.png" alt="arrow">
         <p class="section-title aright">LES INFOS PRATIQUES</p>
-        <p class="section-subtitle aright">C’est plus l’antenne de Qachan ?</p>
+        <p class="section-subtitle aright">C'est plus l'antenne de Qachan ?</p>
         <div class="section-p aright">
-            <b>Et non! Pour se rendre à l’ENS Rennes
+            <b>Et non! Pour se rendre à l'ENS Rennes
             (Campus de Ker Lann, 11 Avenue Robert Schuman, 35170 Bruz) :</b>
             <ul>
                 <li> En train ou en car en général ! Renseignez-vous auprès de votre ENS pour connaître les modalités de voyage
                     de groupe</li>
-                <li>    Depuis Rennes : C7 à Saint-Jacques Gaîté (accessible par le métro b) direction Bruz, arrêt Ker Lann (jusqu’à
+                <li>    Depuis Rennes : C7 à Saint-Jacques Gaîté (accessible par le métro b) direction Bruz, arrêt Ker Lann (jusqu'à
                     1h44)**</li>
             </ul>
             <b>Pour aller à Rennes depuis le campus*** :</b>
             <ul>
-                <li> C7 à Ker Lann jusqu’à Saint-Jacques Gaîté (terminus, donne accès au métro b) jusqu’à 0h03</li>
+                <li> C7 à Ker Lann jusqu'à Saint-Jacques Gaîté (terminus, donne accès au métro b) jusqu'à 0h03</li>
                 <li> N3 à Ker Lann direction Rennes (République), un par heure de 2h10 à 4h10</li>
             </ul>
 
             <b>Repas : </b>
-            Plus d’infos prochainement
+            Plus d'infos prochainement
             <p>
-            <i id="footnote">(**) et (***) : valable du vendredi au samedi soir, pour + d’infos, voir le site de la STAR (Service des
+            <i id="footnote">(**) et (***) : valable du vendredi au samedi soir, pour + d'infos, voir le site de la STAR (Service des
                 transports en commun de l'agglomération rennaise) : <a href="https://www.star.fr/">https://www.star.fr/</a></i>
             </p>
             </div>
@@ -159,6 +175,9 @@
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, {});
+
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {});
         });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -168,6 +187,8 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+
+                M.Sidenav.getInstance(document.querySelector('.sidenav')).close() 
             });
         });
     </script>

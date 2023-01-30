@@ -1,22 +1,27 @@
 /* Load Madelyn.otf, Brittany.otf, and SIFONN_PRO.otf */
 @font-face {
     font-family: "Brittany";
-    src: url("./BrittanySignature.ttf") format("truetype");
+    src: url("./fonts/meh.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Madelyn";
-    src: url("./Madelyn.otf") format("opentype");
+    src: url("./fonts/Madelyn.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Sifonn";
-    src: url("./SIFONN_PRO.otf") format("opentype");
+    src: url("./fonts/SIFONN_PRO.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Sifonn Outline";
+    src: url("./fonts/SIFONN_BASIC_OUTLINE.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Codex";
-    src: url("./codec-pro.regular.ttf") format("truetype");
+    src: url("./fonts/codec-pro.regular.ttf") format("truetype");
 }
 
 @-webkit-keyframes glow {
@@ -29,11 +34,21 @@
     }
 }
 
+@-webkit-keyframes glowr {
+    from {
+        text-shadow: 0 0 10px hsl(0, 0%, 100%, 0.70), 0 0 20px hsl(0, 0%, 100%, 0.70), 0 0 30px rgba(245, 54, 114, 0.7), 0 0 40px rgba(245, 54, 114, 0.7), 0 0 50px rgba(245, 54, 114, 0.7), 0 0 60px rgba(245, 54, 114, 0.7), 0 0 70px rgba(245, 54, 114, 0.7);
+    }
+
+    to {
+        text-shadow: 0 0 20px hsl(0, 0%, 100%, 0.70), 0 0 30px rgba(245, 54, 114, 0.7), 0 0 40px rgba(245, 54, 114, 0.7), 0 0 50px rgba(245, 54, 114, 0.7), 0 0 60px rgba(245, 54, 114, 0.7), 0 0 70px rgba(245, 54, 114, 0.7), 0 0 80px rgba(245, 54, 114, 0.7);
+    }
+}
+
 /* We work in a mobile adpatation first approach ~ 360x640 */
 /* Mobile adaptation */
 
 body {
-    background-image: url(./background4.png);
+    background-image: url(./img/background600.png);
     background-size: 100% auto;
     background-repeat: repeat-y;
 }
@@ -48,6 +63,11 @@ nav {
 #menu {
     display: flex;
     background: linear-gradient(0.25turn, rgba(245, 54, 114, 0.7), rgba(147, 10, 78, 0.7), rgba(201, 13, 82, 0.7));
+}
+
+#btnrennes {
+    color: white!important;
+    font-weight: bolder;
 }
 
 .menu-item {
@@ -74,6 +94,22 @@ nav {
     width: 100%;
     height: auto;
     padding: 2%;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    font-weight: bolder;
+    margin : 10px;
+    color: #e04fc9;
+    font-family: 'Sifonn Outline';
+    font-size: 20px;
+    text-align: center;
+    -webkit-animation: glowr 2s ease-in-out infinite alternate;
+    -moz-animation: glowr 2s ease-in-out infinite alternate;
+    animation: glowr 2s ease-in-out infinite alternate;
 }
 
 
@@ -185,7 +221,7 @@ nav {
 .section-button {
     top: -400px;
     font-family: 'Sifonn'!important;
-    background-image: url("bouton.png");
+    background-image: url("./img/bouton.png");
     background-size: cover;
     height: 58px!important;
     line-height: 28px!important;
@@ -272,11 +308,11 @@ nav {
 }
 
 #page1, #page1 .arrow-right{
-    height: 450px;
+    height: 475px;
 }
 
 #page1 .section-title, #page1 .section-subtitle, #page1 .section-p, #page1 .section-button {
-    top: -450px;
+    top: -475px;
 }
 
 #page2, #page2 .arrow-left{
@@ -308,6 +344,13 @@ nav {
 
 /* Tablet adaptation */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+    body {
+        background-image: url(./img/background993.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
+
+
     .section-title {
         font-size: 46px;
     }
@@ -349,6 +392,12 @@ nav {
 
 /* PC adaptation */
 @media only screen and (min-width: 993px) {
+
+    body {
+        background-image: url(./img/background1200.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
 
     /* Portrait for tablet, almost PC */
     @media screen and (orientation:landscape) {
@@ -460,16 +509,34 @@ nav {
 /* PC +  adaptation */
 
 @media only screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(./img/backgroundfull.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
+
     .title-text {
         font-size: 46px;
     }
     .subtitle-text {
         font-size: 40px;
     }
+
+    .date {
+        font-size: 25px;
+    }
 }
 
 /* PC + + adaptation */
 @media only screen and (min-width: 1800px) {
+
+    body {
+        background-image: url(./img/backgroundfull.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
+
     .title-text {
         font-size: 46px;
     }
