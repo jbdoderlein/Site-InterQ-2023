@@ -454,24 +454,24 @@ nav {
     .arrow-left {
         width: 950px;
         height: 400px;
-        margin-left: calc(100vw - 950px);
+        margin-left: calc(100vw - 950px - (100vw - 100%));
     }
 
     .section-title.aleft {
-        margin-left: calc(100vw - 950px + 300px) !important;
+        margin-left: calc(100vw - 950px + 300px - (100vw - 100%)) !important;
     }
 
     .section-subtitle.aleft {
-        margin-left: calc(100vw - 950px + 300px) !important;
+        margin-left: calc(100vw - 950px + 300px - (100vw - 100%)) !important;
         width: auto;
     }
 
     .section-p.aleft {
-        margin-left: calc(100vw - 950px + 300px) !important;
+        margin-left: calc(100vw - 950px + 300px - (100vw - 100%)) !important;
     }
     
     .section-button.aleft {
-        margin-left: calc(100vw - 950px + 300px) !important;
+        margin-left: calc(100vw - 950px + 300px - (100vw - 100%)) !important;
         width: 600px;
     }
 
@@ -579,23 +579,23 @@ nav {
     .arrow-left {
         width: 1000px;
         height: 500px;
-        margin-left: calc(100vw - 1000px);
+        margin-left: calc(100vw - 1000px - (100vw - 100%));
     }
 
     .section-title.aleft {
-        margin-left: calc(100vw - 1000px + 300px) !important;
+        margin-left: calc(100vw - 1000px + 300px - (100vw - 100%)) !important;
     }
 
     .section-subtitle.aleft {
-        margin-left: calc(100vw - 1000px + 300px) !important;
+        margin-left: calc(100vw - 1000px + 300px - (100vw - 100%)) !important;
     }
 
     .section-p.aleft {
-        margin-left: calc(100vw - 1000px + 300px) !important;
+        margin-left: calc(100vw - 1000px + 300px - (100vw - 100%)) !important;
     }
 
     .section-button.aleft {
-        margin-left: calc(100vw - 1000px + 300px) !important;
+        margin-left: calc(100vw - 1000px + 300px - (100vw - 100%)) !important;
     }
 
     #tarif{
